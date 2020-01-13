@@ -1,9 +1,12 @@
 <h1>Products#index</h1> 
-<% unless @products.nil? %> 
+
 <h1>Products:</h1>
-<%= @products.each do |x| %> 
-    <% %>
-<p><%= x %></p>
+<ul> 
+
+<%= cart.each do |x| %> 
+    
+<li><%= x %></li>
     <% end %>
- <% end %>
-<%= render 'form' %>
+ 
+</ul>
+ <%= render 'form' %> 

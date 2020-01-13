@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
-  def index 
-    @products = session[:cart]
+  def index  
+    
+    @products = cart
     @product = String.new()
     
   end
@@ -9,6 +10,6 @@ class ProductsController < ApplicationController
     
     product = params[:product]
     cart << product
-    redirect_to index
+    render :index
   end
 end
