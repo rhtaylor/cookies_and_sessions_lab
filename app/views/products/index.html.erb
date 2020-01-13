@@ -1,0 +1,7 @@
+<h1>Products#index</h1> 
+<% unless @products.nil? %> 
+<%= @products.each do |x| %>
+    <li><h1>Product: <%= x %></h1> </li> 
+    <% end %>
+ <% end %>
+<%= render 'form' %>
